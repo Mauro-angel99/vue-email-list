@@ -18,8 +18,8 @@
 <body>
     <div id="root">
         <button @click="createdEmail">Genera email</button>
-        <ul>
-            <li v-for="(email, i) in emails">{{ emails[i] }}</li>
+        <ul v-if="emails.length === numberEmail">
+            <li v-for="email in emails">{{ email }}</li>
         </ul>
     </div>
 
